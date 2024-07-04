@@ -30,6 +30,7 @@
 		01CAC4D02C37566300222333 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4CF2C37566300222333 /* LoginViewModel.swift */; };
 		01CAC4D32C375E2100222333 /* EmployeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D22C375E2100222333 /* EmployeDetailView.swift */; };
 		01CAC4D52C3760A900222333 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D42C3760A900222333 /* EmployeeDetailView.swift */; };
+		01CAC4D92C376A1700222333 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D82C376A1700222333 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		01CAC4CF2C37566300222333 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		01CAC4D22C375E2100222333 /* EmployeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeDetailView.swift; sourceTree = "<group>"; };
 		01CAC4D42C3760A900222333 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
+		01CAC4D82C376A1700222333 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				01CAC4712C37380900222333 /* employeesAppApp.swift */,
 				01CAC4B42C3746E200222333 /* EmployeeList */,
 				01CAC4732C37380900222333 /* ContentView.swift */,
+				01CAC4D82C376A1700222333 /* SplashScreenView.swift */,
 				01CAC4CB2C3755D100222333 /* Login */,
 				01CAC4C42C374E9C00222333 /* Utils */,
 				01CAC4752C37380A00222333 /* Assets.xcassets */,
@@ -430,6 +433,7 @@
 				01CAC4B52C37473D00222333 /* ObtainEmployeeList.swift in Sources */,
 				01CAC4B62C37475100222333 /* ObtainEmployeeListProcotol.swift in Sources */,
 				01CAC4D32C375E2100222333 /* EmployeDetailView.swift in Sources */,
+				01CAC4D92C376A1700222333 /* SplashScreenView.swift in Sources */,
 				01CAC4B32C3746D600222333 /* employee.swift in Sources */,
 				01CAC4C62C374F5000222333 /* CardView.swift in Sources */,
 				01CAC4742C37380900222333 /* ContentView.swift in Sources */,

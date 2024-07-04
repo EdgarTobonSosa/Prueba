@@ -10,7 +10,7 @@ import Foundation
 class EmployeeListViewModel: ObservableObject {
     
     @Published var employees = [Employee]()
-    @Published var state: State = .idle
+    @Published var state: StateService = .idle
 
     let employeesUseCase: ObtainEmployeeListProtocol
     
@@ -46,7 +46,7 @@ class EmployeeListViewModel: ObservableObject {
 }
 
 
-enum State {
+enum StateService {
     case idle
     case loading
     case loaded

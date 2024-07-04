@@ -12,7 +12,7 @@ class EmployeeDetailViewModel: ObservableObject {
     let idEmployee: String
 
     
-    @Published var state: State = .idle
+    @Published var state: StateService = .idle
     @Published var employee = [Employee]()
     init(idEmployee: String) {
         self.idEmployee = idEmployee

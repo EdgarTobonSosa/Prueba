@@ -11,7 +11,7 @@ import SwiftUI
 struct employeesAppApp: App {
     var body: some Scene {
         WindowGroup {
-            EmployeDetailView(employeDetailVM: EmployeeDetailViewModel(idEmployee: "1"))
+            SplashScreenView()
         }
     }
 }
