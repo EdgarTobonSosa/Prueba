@@ -25,7 +25,7 @@ struct EmployeeResponse: Codable {
     }
 }
 
-struct Employee: Codable {
+struct Employee: Codable, Identifiable {
     let id: Int
     let name: String
     let salary: Int
@@ -48,5 +48,13 @@ struct Employee: Codable {
         self.salary = try container.decode(Int.self, forKey: .salary)
         self.age = try container.decode(Int.self, forKey: .age)
         self.image = try container.decode(String.self, forKey: .image)
+    }
+    
+    init(id: Int, name: String, salary: Int, age: Int, image: String) {
+        self.id = id
+        self.name = name
+        self.salary = salary
+        self.age = age
+        self.image = image
     }
 }

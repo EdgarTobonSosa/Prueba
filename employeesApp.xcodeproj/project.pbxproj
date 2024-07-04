@@ -23,6 +23,9 @@
 		01CAC4BA2C37476800222333 /* EmployeeListRemoteSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4AF2C373F3B00222333 /* EmployeeListRemoteSourceProtocol.swift */; };
 		01CAC4BB2C37476E00222333 /* EmployeeListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4B12C3745DD00222333 /* EmployeeListFactory.swift */; };
 		01CAC4BF2C374BAF00222333 /* EmployeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4BE2C374BAF00222333 /* EmployeeListViewModel.swift */; };
+		01CAC4C32C374E4C00222333 /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4C22C374E4C00222333 /* EmployeeListView.swift */; };
+		01CAC4C62C374F5000222333 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4C52C374F5000222333 /* CardView.swift */; };
+		01CAC4CA2C3750C600222333 /* EmployeeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4C92C3750C600222333 /* EmployeeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		01CAC4B12C3745DD00222333 /* EmployeeListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListFactory.swift; sourceTree = "<group>"; };
 		01CAC4BC2C37495D00222333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		01CAC4BE2C374BAF00222333 /* EmployeeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewModel.swift; sourceTree = "<group>"; };
+		01CAC4C22C374E4C00222333 /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		01CAC4C52C374F5000222333 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		01CAC4C92C3750C600222333 /* EmployeeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 				01CAC4712C37380900222333 /* employeesAppApp.swift */,
 				01CAC4B42C3746E200222333 /* EmployeeList */,
 				01CAC4732C37380900222333 /* ContentView.swift */,
+				01CAC4C42C374E9C00222333 /* Utils */,
 				01CAC4752C37380A00222333 /* Assets.xcassets */,
 				01CAC4772C37380A00222333 /* Preview Content */,
 			);
@@ -215,9 +222,35 @@
 		01CAC4BD2C374B9200222333 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				01CAC4C72C3750AD00222333 /* UI */,
 				01CAC4BE2C374BAF00222333 /* EmployeeListViewModel.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		01CAC4C42C374E9C00222333 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4C52C374F5000222333 /* CardView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		01CAC4C72C3750AD00222333 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4C82C3750B500222333 /* Components */,
+				01CAC4C22C374E4C00222333 /* EmployeeListView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		01CAC4C82C3750B500222333 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4C92C3750C600222333 /* EmployeeCard.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,11 +386,14 @@
 				01CAC4BA2C37476800222333 /* EmployeeListRemoteSourceProtocol.swift in Sources */,
 				01CAC4BF2C374BAF00222333 /* EmployeeListViewModel.swift in Sources */,
 				01CAC4B92C37476300222333 /* EmployeeListDataSourceProtocol.swift in Sources */,
+				01CAC4CA2C3750C600222333 /* EmployeeCard.swift in Sources */,
 				01CAC4BB2C37476E00222333 /* EmployeeListFactory.swift in Sources */,
 				01CAC4B52C37473D00222333 /* ObtainEmployeeList.swift in Sources */,
 				01CAC4B62C37475100222333 /* ObtainEmployeeListProcotol.swift in Sources */,
 				01CAC4B32C3746D600222333 /* employee.swift in Sources */,
+				01CAC4C62C374F5000222333 /* CardView.swift in Sources */,
 				01CAC4742C37380900222333 /* ContentView.swift in Sources */,
+				01CAC4C32C374E4C00222333 /* EmployeeListView.swift in Sources */,
 				01CAC4722C37380900222333 /* employeesAppApp.swift in Sources */,
 				01CAC4B82C37476300222333 /* EmployeeListRepository.swift in Sources */,
 				01CAC4B72C37475100222333 /* EmployeeListRepositoryProtocol.swift in Sources */,
