@@ -27,7 +27,7 @@ struct EmployeDetailView: View {
             }
             .padding(.bottom, 40)
             
-            Text (String(employee.salary))
+            Text ("$\(String(employee.salary))")
                 .font(.system(size: 24,weight: .bold))
                 .foregroundStyle(Color.green)
         }
