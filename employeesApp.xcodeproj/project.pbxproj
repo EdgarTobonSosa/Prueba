@@ -14,7 +14,14 @@
 		01CAC4832C37380B00222333 /* employeesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4822C37380B00222333 /* employeesAppTests.swift */; };
 		01CAC48D2C37380B00222333 /* employeesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC48C2C37380B00222333 /* employeesAppUITests.swift */; };
 		01CAC48F2C37380B00222333 /* employeesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC48E2C37380B00222333 /* employeesAppUITestsLaunchTests.swift */; };
-		01CAC4A02C3739B300222333 /* employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC49F2C3739B300222333 /* employee.swift */; };
+		01CAC4B32C3746D600222333 /* employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC49F2C3739B300222333 /* employee.swift */; };
+		01CAC4B52C37473D00222333 /* ObtainEmployeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4A42C373D4E00222333 /* ObtainEmployeeList.swift */; };
+		01CAC4B62C37475100222333 /* ObtainEmployeeListProcotol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4A22C373CE400222333 /* ObtainEmployeeListProcotol.swift */; };
+		01CAC4B72C37475100222333 /* EmployeeListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4A72C373E3100222333 /* EmployeeListRepositoryProtocol.swift */; };
+		01CAC4B82C37476300222333 /* EmployeeListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4AA2C373E7300222333 /* EmployeeListRepository.swift */; };
+		01CAC4B92C37476300222333 /* EmployeeListDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4AD2C373F1C00222333 /* EmployeeListDataSourceProtocol.swift */; };
+		01CAC4BA2C37476800222333 /* EmployeeListRemoteSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4AF2C373F3B00222333 /* EmployeeListRemoteSourceProtocol.swift */; };
+		01CAC4BB2C37476E00222333 /* EmployeeListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4B12C3745DD00222333 /* EmployeeListFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,14 @@
 		01CAC48C2C37380B00222333 /* employeesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeesAppUITests.swift; sourceTree = "<group>"; };
 		01CAC48E2C37380B00222333 /* employeesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01CAC49F2C3739B300222333 /* employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employee.swift; sourceTree = "<group>"; };
+		01CAC4A22C373CE400222333 /* ObtainEmployeeListProcotol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainEmployeeListProcotol.swift; sourceTree = "<group>"; };
+		01CAC4A42C373D4E00222333 /* ObtainEmployeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainEmployeeList.swift; sourceTree = "<group>"; };
+		01CAC4A72C373E3100222333 /* EmployeeListRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListRepositoryProtocol.swift; sourceTree = "<group>"; };
+		01CAC4AA2C373E7300222333 /* EmployeeListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListRepository.swift; sourceTree = "<group>"; };
+		01CAC4AD2C373F1C00222333 /* EmployeeListDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListDataSourceProtocol.swift; sourceTree = "<group>"; };
+		01CAC4AF2C373F3B00222333 /* EmployeeListRemoteSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListRemoteSourceProtocol.swift; sourceTree = "<group>"; };
+		01CAC4B12C3745DD00222333 /* EmployeeListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListFactory.swift; sourceTree = "<group>"; };
+		01CAC4BC2C37495D00222333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +111,9 @@
 		01CAC4702C37380900222333 /* employeesApp */ = {
 			isa = PBXGroup;
 			children = (
+				01CAC4BC2C37495D00222333 /* Info.plist */,
 				01CAC4712C37380900222333 /* employeesAppApp.swift */,
+				01CAC4B42C3746E200222333 /* EmployeeList */,
 				01CAC4732C37380900222333 /* ContentView.swift */,
 				01CAC4752C37380A00222333 /* Assets.xcassets */,
 				01CAC4772C37380A00222333 /* Preview Content */,
@@ -115,7 +132,6 @@
 		01CAC4812C37380B00222333 /* employeesAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				01CAC49B2C37387B00222333 /* EmployeList */,
 				01CAC4822C37380B00222333 /* employeesAppTests.swift */,
 			);
 			path = employeesAppTests;
@@ -130,20 +146,11 @@
 			path = employeesAppUITests;
 			sourceTree = "<group>";
 		};
-		01CAC49B2C37387B00222333 /* EmployeList */ = {
-			isa = PBXGroup;
-			children = (
-				01CAC49E2C37389000222333 /* Infraestructure */,
-				01CAC49D2C37388700222333 /* Data */,
-				01CAC49C2C37388300222333 /* Domain */,
-			);
-			path = EmployeList;
-			sourceTree = "<group>";
-		};
 		01CAC49C2C37388300222333 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				01CAC49F2C3739B300222333 /* employee.swift */,
+				01CAC4A12C373CCD00222333 /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -151,15 +158,55 @@
 		01CAC49D2C37388700222333 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				01CAC4AC2C373EFB00222333 /* RemoteSource */,
+				01CAC4A92C373E4C00222333 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		01CAC49E2C37389000222333 /* Infraestructure */ = {
+		01CAC4A12C373CCD00222333 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				01CAC4A42C373D4E00222333 /* ObtainEmployeeList.swift */,
+				01CAC4A62C373E2000222333 /* Protocols */,
 			);
-			path = Infraestructure;
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		01CAC4A62C373E2000222333 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4A22C373CE400222333 /* ObtainEmployeeListProcotol.swift */,
+				01CAC4A72C373E3100222333 /* EmployeeListRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		01CAC4A92C373E4C00222333 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4AA2C373E7300222333 /* EmployeeListRepository.swift */,
+				01CAC4AD2C373F1C00222333 /* EmployeeListDataSourceProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		01CAC4AC2C373EFB00222333 /* RemoteSource */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4AF2C373F3B00222333 /* EmployeeListRemoteSourceProtocol.swift */,
+			);
+			path = RemoteSource;
+			sourceTree = "<group>";
+		};
+		01CAC4B42C3746E200222333 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4B12C3745DD00222333 /* EmployeeListFactory.swift */,
+				01CAC49D2C37388700222333 /* Data */,
+				01CAC49C2C37388300222333 /* Domain */,
+			);
+			path = EmployeeList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01CAC4BA2C37476800222333 /* EmployeeListRemoteSourceProtocol.swift in Sources */,
+				01CAC4B92C37476300222333 /* EmployeeListDataSourceProtocol.swift in Sources */,
+				01CAC4BB2C37476E00222333 /* EmployeeListFactory.swift in Sources */,
+				01CAC4B52C37473D00222333 /* ObtainEmployeeList.swift in Sources */,
+				01CAC4B62C37475100222333 /* ObtainEmployeeListProcotol.swift in Sources */,
+				01CAC4B32C3746D600222333 /* employee.swift in Sources */,
 				01CAC4742C37380900222333 /* ContentView.swift in Sources */,
 				01CAC4722C37380900222333 /* employeesAppApp.swift in Sources */,
+				01CAC4B82C37476300222333 /* EmployeeListRepository.swift in Sources */,
+				01CAC4B72C37475100222333 /* EmployeeListRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +357,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CAC4832C37380B00222333 /* employeesAppTests.swift in Sources */,
-				01CAC4A02C3739B300222333 /* employee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +515,7 @@
 				DEVELOPMENT_TEAM = 3G4X92VMD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = employeesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -491,6 +546,7 @@
 				DEVELOPMENT_TEAM = 3G4X92VMD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = employeesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
