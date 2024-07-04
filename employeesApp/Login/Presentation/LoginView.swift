@@ -40,7 +40,7 @@ struct LoginView: View {
             }, label: {
                 HStack {
                     Spacer()
-                    Text("Iniciar")
+                    Text("Login")
                         .font(.system(size: 16,weight: .bold))
                     Spacer()
                         

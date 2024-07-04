@@ -28,6 +28,7 @@
 		01CAC4CA2C3750C600222333 /* EmployeeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4C92C3750C600222333 /* EmployeeCard.swift */; };
 		01CAC4CD2C3755E200222333 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4CC2C3755E200222333 /* LoginView.swift */; };
 		01CAC4D02C37566300222333 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4CF2C37566300222333 /* LoginViewModel.swift */; };
+		01CAC4D32C375E2100222333 /* EmployeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D22C375E2100222333 /* EmployeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		01CAC4C92C3750C600222333 /* EmployeeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCard.swift; sourceTree = "<group>"; };
 		01CAC4CC2C3755E200222333 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		01CAC4CF2C37566300222333 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		01CAC4D22C375E2100222333 /* EmployeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				01CAC4C52C374F5000222333 /* CardView.swift */,
+				01CAC4D12C375E0B00222333 /* EmployeeDetail */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,6 +276,14 @@
 				01CAC4CF2C37566300222333 /* LoginViewModel.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		01CAC4D12C375E0B00222333 /* EmployeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC4D22C375E2100222333 /* EmployeDetailView.swift */,
+			);
+			path = EmployeeDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +425,7 @@
 				01CAC4BB2C37476E00222333 /* EmployeeListFactory.swift in Sources */,
 				01CAC4B52C37473D00222333 /* ObtainEmployeeList.swift in Sources */,
 				01CAC4B62C37475100222333 /* ObtainEmployeeListProcotol.swift in Sources */,
+				01CAC4D32C375E2100222333 /* EmployeDetailView.swift in Sources */,
 				01CAC4B32C3746D600222333 /* employee.swift in Sources */,
 				01CAC4C62C374F5000222333 /* CardView.swift in Sources */,
 				01CAC4742C37380900222333 /* ContentView.swift in Sources */,
