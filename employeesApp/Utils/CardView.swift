@@ -32,7 +32,6 @@ struct CardView: ViewModifier {
     func body(content: Content) -> some View {
     
         content
-            .padding()
             .background {
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .frame(

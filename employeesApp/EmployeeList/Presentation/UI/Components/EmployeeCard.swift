@@ -46,6 +46,7 @@ struct EmployeeCard: View {
                 }
             }
         }
+        .padding()
     }
 }
 
