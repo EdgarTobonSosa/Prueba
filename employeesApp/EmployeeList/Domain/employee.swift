@@ -58,3 +58,23 @@ struct Employee: Codable, Identifiable {
         self.image = image
     }
 }
+
+
+struct DetailEmployeeResponse: Codable {
+    let status: String
+    let data: Employee
+    let message: String
+    
+    enum CodignKeys: String, CodingKey {
+        case status, data, message
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodignKeys.self)
+        
+        self.status = try container.decode(String.self, forKey: .status)
+        self.data = try container.decode(Employee.self, forKey: .data)
+        self.message = try container.decode(String.self, forKey: .message)
+    }
+}
+

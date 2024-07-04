@@ -29,6 +29,7 @@
 		01CAC4CD2C3755E200222333 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4CC2C3755E200222333 /* LoginView.swift */; };
 		01CAC4D02C37566300222333 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4CF2C37566300222333 /* LoginViewModel.swift */; };
 		01CAC4D32C375E2100222333 /* EmployeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D22C375E2100222333 /* EmployeDetailView.swift */; };
+		01CAC4D52C3760A900222333 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D42C3760A900222333 /* EmployeeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		01CAC4CC2C3755E200222333 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		01CAC4CF2C37566300222333 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		01CAC4D22C375E2100222333 /* EmployeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeDetailView.swift; sourceTree = "<group>"; };
+		01CAC4D42C3760A900222333 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				01CAC4D22C375E2100222333 /* EmployeDetailView.swift */,
+				01CAC4D42C3760A900222333 /* EmployeeDetailView.swift */,
 			);
 			path = EmployeeDetail;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				01CAC4BA2C37476800222333 /* EmployeeListRemoteSourceProtocol.swift in Sources */,
 				01CAC4BF2C374BAF00222333 /* EmployeeListViewModel.swift in Sources */,
 				01CAC4B92C37476300222333 /* EmployeeListDataSourceProtocol.swift in Sources */,
+				01CAC4D52C3760A900222333 /* EmployeeDetailView.swift in Sources */,
 				01CAC4CD2C3755E200222333 /* LoginView.swift in Sources */,
 				01CAC4D02C37566300222333 /* LoginViewModel.swift in Sources */,
 				01CAC4CA2C3750C600222333 /* EmployeeCard.swift in Sources */,
