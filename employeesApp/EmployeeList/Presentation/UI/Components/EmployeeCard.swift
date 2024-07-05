@@ -35,7 +35,7 @@ struct EmployeeCard: View {
                 VStack(alignment: .leading) {
                     
                     Text("$"+String(employee.salary))
-                        .foregroundStyle(Color.green)
+                        .foregroundStyle(SalaryValidator.tintSalary(employee.salary))
                         .font(.system(size: 20))
                         .bold()
                     

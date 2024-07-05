@@ -51,7 +51,7 @@ class EmployeeDetailDataService {
     
     static func makeRequest(employeeID: String) async -> Result<Welcome, employeeDomainError> {
         
-        let url = EndPoint.make(baseUrl: "http://dummy.restapiexample.com/api/v1/employee", end:  "/1")
+        let url = EndPoint.make(baseUrl: "http://dummy.restapiexample.com/public/api/v1/employee", end:  employeeID)
         
         guard let url = url else {
             return .failure(.generic)

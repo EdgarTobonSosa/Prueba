@@ -40,7 +40,7 @@ struct EmployeDetailView: View {
                 
                 Text ("$\(String(employee.employeeSalary))")
                     .font(.system(size: 24,weight: .bold))
-                    .foregroundStyle(Color.green)
+                    .foregroundStyle(SalaryValidator.tintSalary(employee.employeeSalary))
             }
 
         case .error:
@@ -59,4 +59,10 @@ extension EmployeDetailView {
 }
 #Preview {
     EmployeDetailView(employeDetailVM: EmployeeDetailViewModel(idEmployee: "1"))
+}
+
+class SalaryValidator {
+    static func tintSalary(_ salary:Int ) -> Color {
+        return salary > 1000 ? Color.green : Color.red
+    }
 }
