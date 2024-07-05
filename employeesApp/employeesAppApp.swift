@@ -11,7 +11,10 @@ import SwiftUI
 struct employeesAppApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            NavigationStack {
+                SplashScreenView()
+            }
+           
         }
     }
 }

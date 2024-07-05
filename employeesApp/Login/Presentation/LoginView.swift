@@ -56,6 +56,9 @@ struct LoginView: View {
             })
             .padding(.bottom,50)
         }
+//        .navigationDestination(for: Int.self) { login in
+//            EmployeeListView(employees: <#T##[Employee]#>)
+//        }
     }
 }
 

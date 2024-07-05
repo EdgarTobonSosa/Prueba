@@ -7,27 +7,57 @@
 
 import SwiftUI
 
+
 struct EmployeeListView: View {
-    let employees: [Employee]
+    @StateObject var emplyeListVM = EmployeeListViewModel()
     var body: some View {
-        ForEach(employees) { employee in
-            EmployeeCard(employee: employee)
-                
-                .cardStyle()
+        EmployeeListViewPreview(
+            employees: emplyeListVM.employees , stateSevice: emplyeListVM.state, action: {emplyeListVM.ObtainEmployes()})
+    }
+}
+
+struct EmployeeListViewPreview: View {
+    let employees: [Employee]
+    let stateSevice: StateService
+    let action: () -> ()
+    
+    var body: some View {
+        
+        switch stateSevice {
+        case .idle:
+            Text("")
+                .onAppear{
+                    action()
+                }
+            
+        case .loading:
+            Text("Loading...")
+        case .loaded:
+            ForEach(employees) { employee in
+                EmployeeCard(employee: employee)
+                    
+                    .cardStyle()
+            }
+            .padding([.leading,.trailing], 15)
+        case .error:
+            Text("Error")
         }
-        .padding([.leading,.trailing], 15)
+       
     }
 }
 
 #Preview {
-    EmployeeListView(employees: [
+    EmployeeListViewPreview(employees: [
         Employee(id: 122342343, name: "Edgar Tobón Sosa", salary: 10000, age: 25, image: ""),
         Employee(id: 122342343, name: "Edgar Tobón Sosa", salary: 10000, age: 25, image: ""),
         Employee(id: 122342343, name: "Edgar Tobón Sosa", salary: 10000, age: 25, image: ""),
         Employee(id: 122342343, name: "Edgar Tobón Sosa", salary: 10000, age: 25, image: ""),
         Employee(id: 122342343, name: "Edgar Tobón Sosa", salary: 10000, age: 25, image: ""),
         Employee(id: 122342343, name: "Edgar Tobón Sosa", salary: 10000, age: 25, image: "")
-    ])
+    ],
+                            stateSevice: .loaded,
+                            action: {}
+    )
 }
 
 
