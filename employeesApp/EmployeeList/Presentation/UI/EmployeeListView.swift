@@ -20,6 +20,7 @@ struct EmployeeListViewPreview: View {
     let employees: [Employee]
     let stateSevice: StateService
     let action: () -> ()
+    @State private var showSlider = false
     
     var body: some View {
         
@@ -33,18 +34,49 @@ struct EmployeeListViewPreview: View {
         case .loading:
             Text("Loading...")
         case .loaded:
-            ScrollView {
-                ForEach(employees) { employee in
-                    NavigationLink {
-                        EmployeDetailView(employeDetailVM: EmployeeDetailViewModel(idEmployee: String(employee.id)))
-                    } label: {
-                        EmployeeCard(employee: employee)
-                            .cardStyle()
+            
+            VStack {
+                
+                HStack {
+                    Image(systemName: "line.3.horizontal")
+                        .resizable()
+                        .frame(width: 20,height: 20)
+                        .onTapGesture {
+                            self.showSlider.toggle()
+                        }
+                    Spacer()
+                }
+                .padding(.leading, 25)
+                .padding(.bottom, 15)
+                
+                
+                ScrollView {
+                    ForEach(employees) { employee in
+                        NavigationLink {
+                            EmployeDetailView(employeDetailVM: EmployeeDetailViewModel(idEmployee: String(employee.id)))
+                        } label: {
+                            EmployeeCard(employee: employee)
+                                .cardStyle()
+                        }
+
+                        
+                    }
+                    .padding([.leading,.trailing], 15)
+                }
+            }
+            .overlay {
+                if showSlider {
+                    HStack {
+                        SliderView(employeeName: "Edgar Tobon", showSlider: $showSlider)
+                            .frame(width:UIScreen.main.bounds.width/1.5 )
+                            .background{
+                                Color.white
+                            }
+                        Spacer()
                     }
 
-                    
                 }
-                .padding([.leading,.trailing], 15)
+                
             }
             
         case .error:

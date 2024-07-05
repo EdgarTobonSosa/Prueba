@@ -32,6 +32,7 @@
 		01CAC4D52C3760A900222333 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D42C3760A900222333 /* EmployeeDetailView.swift */; };
 		01CAC4D92C376A1700222333 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4D82C376A1700222333 /* SplashScreenView.swift */; };
 		01CAC4DB2C37773500222333 /* ImageSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4DA2C37773500222333 /* ImageSelectorView.swift */; };
+		01CAC4DD2C377BF000222333 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CAC4DC2C377BF000222333 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		01CAC4D42C3760A900222333 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
 		01CAC4D82C376A1700222333 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		01CAC4DA2C37773500222333 /* ImageSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorView.swift; sourceTree = "<group>"; };
+		01CAC4DC2C377BF000222333 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				01CAC4C92C3750C600222333 /* EmployeeCard.swift */,
+				01CAC4DC2C377BF000222333 /* SliderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				01CAC4D52C3760A900222333 /* EmployeeDetailView.swift in Sources */,
 				01CAC4CD2C3755E200222333 /* LoginView.swift in Sources */,
 				01CAC4D02C37566300222333 /* LoginViewModel.swift in Sources */,
+				01CAC4DD2C377BF000222333 /* SliderView.swift in Sources */,
 				01CAC4CA2C3750C600222333 /* EmployeeCard.swift in Sources */,
 				01CAC4BB2C37476E00222333 /* EmployeeListFactory.swift in Sources */,
 				01CAC4B52C37473D00222333 /* ObtainEmployeeList.swift in Sources */,

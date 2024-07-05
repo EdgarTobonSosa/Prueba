@@ -11,7 +11,7 @@ import SwiftUI
 import SwiftUI
 import PhotosUI
 
-struct MXTPhotosPicker: View {
+struct PhotosPickerView: View {
     @State var imageSelected = UIImage(systemName: "gear")!
     @State var photoPickerItem: PhotosPickerItem?
     @State var nameImage: String
@@ -28,13 +28,9 @@ struct MXTPhotosPicker: View {
                         .frame(width: 42)
                         .cornerRadius(10)
                     
+                    Text("Setting")
+                        .bold()
                     
-                    TextField("Selecciona una imagen", text: .constant(""))
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .disabled(true)
-                        .frame(maxHeight: .infinity, alignment: .leading)
-                    
-                    Spacer()
                 }
             }
         }
@@ -51,5 +47,5 @@ struct MXTPhotosPicker: View {
 }
 
 #Preview {
-    MXTPhotosPicker(photoPickerItem: nil, nameImage: "")
+    PhotosPickerView(photoPickerItem: nil, nameImage: "")
 }
