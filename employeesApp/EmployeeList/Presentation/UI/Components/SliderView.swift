@@ -10,19 +10,19 @@ import SwiftUI
 struct SliderView: View {
     let employeeName: String
     @Binding var showSlider: Bool
+    @State var imageSelected = UIImage(systemName: "person.crop.circle")!
     var body: some View {
 
 
         VStack {
             HStack {
                 VStack(alignment: .leading){
-                    Image(systemName: "person")
+                    Image(uiImage: imageSelected)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(10)
                         .frame(width: 40,height: 40)
-                        .background{
-                            Circle()
-                                .stroke(lineWidth: 1)
-                            
-                        }
+
                     
                     
                     Text(employeeName)
@@ -44,7 +44,7 @@ struct SliderView: View {
                 Color.blue
         }
             HStack {
-                PhotosPickerView(nameImage: "")
+                PhotosPickerView(imageSelected: $imageSelected)
                 Spacer()
             }
             .padding(.leading, 16)

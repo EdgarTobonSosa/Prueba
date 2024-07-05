@@ -12,17 +12,16 @@ import SwiftUI
 import PhotosUI
 
 struct PhotosPickerView: View {
-    @State var imageSelected = UIImage(systemName: "gear")!
+    @Binding var imageSelected: UIImage
     @State var photoPickerItem: PhotosPickerItem?
-    @State var nameImage: String
-    @State var errorImage: Bool = false
+
     
     var body: some View {
         VStack {
             HStack(spacing: 20) {
                 PhotosPicker(selection: $photoPickerItem, matching: .images) {
                     
-                    Image(uiImage: imageSelected)
+                    Image(systemName: "gear")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 42)
@@ -47,5 +46,6 @@ struct PhotosPickerView: View {
 }
 
 #Preview {
-    PhotosPickerView(photoPickerItem: nil, nameImage: "")
+    PhotosPickerView(imageSelected: Binding.constant(UIImage(systemName: "gear")!))
 }
+
