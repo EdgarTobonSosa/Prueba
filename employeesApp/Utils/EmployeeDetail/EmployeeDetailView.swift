@@ -13,7 +13,7 @@ class EmployeeDetailViewModel: ObservableObject {
 
     
     @Published var state: StateService = .idle
-    @Published var employee = [Employee]()
+    @Published var employee = [DataClass]()
     init(idEmployee: String) {
         self.idEmployee = idEmployee
     }
@@ -49,17 +49,19 @@ class EmployeeDetailViewModel: ObservableObject {
 
 class EmployeeDetailDataService {
     
-    static func makeRequest(employeeID: String) async -> Result<DetailEmployeeResponse, employeeDomainError> {
+    static func makeRequest(employeeID: String) async -> Result<Welcome, employeeDomainError> {
         
-        let url = EndPoint.make(baseUrl: "http://dummy.restapiexample.com/api/v1/employee", end:  employeeID)
+        let url = EndPoint.make(baseUrl: "http://dummy.restapiexample.com/api/v1/employee", end:  "/1")
         
         guard let url = url else {
             return .failure(.generic)
         }
         
         do {
+            print("\(url)")
             let (data, response) = try await URLSession.shared.data(from: url)
-            let employeResponse = try JSONDecoder().decode(DetailEmployeeResponse.self, from: data)
+          let employeResponse = try JSONDecoder().decode(Welcome.self, from: data)
+            print("\(employeResponse)")
             return.success(employeResponse)
            }catch{
                return.failure(.generic)

@@ -28,9 +28,9 @@ struct EmployeDetailView: View {
                         .padding(.bottom)
                     
                     HStack {
-                        Text(employee.name)
+                        Text(employee.employeeName)
                         Spacer()
-                        Text (String(employee.age))
+                        Text (String(employee.employeeAge))
                         
                     }
                     .font(.system(size: 24,weight: .bold))
@@ -38,14 +38,13 @@ struct EmployeDetailView: View {
                 }
                 .padding(.bottom, 40)
                 
-                Text ("$\(String(employee.salary))")
+                Text ("$\(String(employee.employeeSalary))")
                     .font(.system(size: 24,weight: .bold))
                     .foregroundStyle(Color.green)
             }
 
         case .error:
             Text("error")
-            
         }
         
             
@@ -54,8 +53,8 @@ struct EmployeDetailView: View {
 }
 
 extension EmployeDetailView {
-    var employee: Employee{
-    return employeDetailVM.employee.first ?? Employee(id: 122342343, name: "Edgar Tobón Sosa", salary: 10000, age: 25, image: "")
+    var employee: DataClass{
+        return employeDetailVM.employee.first ?? DataClass(id: 122342343, employeeName: "Edgar Tobón Sosa", employeeSalary: 10000, employeeAge: 25, profileImage: "")
 }
 }
 #Preview {
