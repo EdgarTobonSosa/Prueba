@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct employeesAppApp: App {
+    @State private var path = NavigationPath()
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                SplashScreenView()
+            NavigationStack(path: $path) {
+                SplashScreenView(path: $path)
             }
            
         }

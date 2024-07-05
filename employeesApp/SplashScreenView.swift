@@ -10,6 +10,7 @@ import SwiftUI
 struct SplashScreenView: View {
 
     @State private var showSplash = true
+    @Binding var path: NavigationPath
     var body: some View {
         if showSplash{
             VStack{
@@ -33,6 +34,6 @@ struct SplashScreenView: View {
 }
 
 #Preview {
-    SplashScreenView()
+    SplashScreenView(path: Binding.constant(NavigationPath()))
 }
 

@@ -35,9 +35,10 @@ struct LoginView: View {
                            
                 
             Spacer()
-            Button(action: {
-                print("")
-            }, label: {
+            
+            NavigationLink {
+                EmployeeListView()
+            } label: {
                 HStack {
                     Spacer()
                     Text("Login")
@@ -51,14 +52,12 @@ struct LoginView: View {
                     RoundedRectangle(cornerRadius: 4)
                         .frame(height: 50)
                         .padding([.leading,.trailing], 20)
-//
+
                 }
-            })
+            }
             .padding(.bottom,50)
         }
-//        .navigationDestination(for: Int.self) { login in
-//            EmployeeListView(employees: <#T##[Employee]#>)
-//        }
+
     }
 }
 

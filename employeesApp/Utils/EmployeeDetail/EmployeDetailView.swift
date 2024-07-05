@@ -44,7 +44,7 @@ struct EmployeDetailView: View {
             }
 
         case .error:
-            EmptyView()
+            Text("error")
             
         }
         

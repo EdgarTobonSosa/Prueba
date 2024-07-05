@@ -33,12 +33,20 @@ struct EmployeeListViewPreview: View {
         case .loading:
             Text("Loading...")
         case .loaded:
-            ForEach(employees) { employee in
-                EmployeeCard(employee: employee)
+            ScrollView {
+                ForEach(employees) { employee in
+                    NavigationLink {
+                        EmployeDetailView(employeDetailVM: EmployeeDetailViewModel(idEmployee: String(employee.id)))
+                    } label: {
+                        EmployeeCard(employee: employee)
+                            .cardStyle()
+                    }
+
                     
-                    .cardStyle()
+                }
+                .padding([.leading,.trailing], 15)
             }
-            .padding([.leading,.trailing], 15)
+            
         case .error:
             Text("Error")
         }
