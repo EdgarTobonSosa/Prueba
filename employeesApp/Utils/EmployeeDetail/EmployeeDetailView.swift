@@ -15,7 +15,7 @@ class EmployeeDetailViewModel: ObservableObject {
     @Published var state: StateService = .idle
     @Published var employee = [DataClass]()
     init(idEmployee: String) {
-        self.idEmployee = idEmployee
+        self.idEmployee = idEmployee 
     }
     
     func obtainEmployeeDetail() {

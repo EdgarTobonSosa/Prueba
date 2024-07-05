@@ -53,7 +53,7 @@ struct EmployeeListViewPreview: View {
                 ScrollView {
                     ForEach((0...(employees.count - 1)),id:\.self) { index in
                         NavigationLink {
-                            EmployeDetailView(employeDetailVM: EmployeeDetailViewModel(idEmployee: String(index)))
+                            EmployeDetailView(employeDetailVM: EmployeeDetailViewModel(idEmployee: String(index + 1)))
                         } label: {
                             EmployeeCard(employee: employees[index])
                                 .cardStyle()
